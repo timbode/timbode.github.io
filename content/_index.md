@@ -39,7 +39,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: About
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   # - block: skills
@@ -257,17 +257,17 @@ sections:
       #   latitude: '37.4275'
       #   longitude: '-122.1697'  
       contact_links:
-        # - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
-          # icon_pack: ai
-        - name: Google Scholar
+        - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
+          icon_pack: ai
+          name: Google Scholar
           link: https://scholar.google.co.th/citations?user=8NLnrqAAAAAJ&hl=en
-        # - icon: github
-          # icon_pack: fab
-        - name: GitHub
+        - icon: github
+          icon_pack: fab
+          name: GitHub
           link: https://github.com/timbode
-        # - icon: linkedin
-          # icon_pack: fab
-        - name: LinkedIn
+        - icon: linkedin
+          icon_pack: fab
+          name: LinkedIn
           link: https://www.linkedin.com/in/tim-bode-808b54149/
       # Automatically link email and phone or display as text?
       autolink: false
@@ -279,6 +279,6 @@ sections:
     #     netlify:
     #       # Enable CAPTCHA challenge to reduce spam?
     #       captcha: false
-    # design:
-    #   columns: '2'
+    design:
+      columns: '2'
 ---
