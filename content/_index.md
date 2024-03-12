@@ -259,15 +259,15 @@ sections:
       contact_links:
         # - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
           # icon_pack: ai
-          name: Google Scholar
+        - name: Google Scholar
           link: https://scholar.google.co.th/citations?user=8NLnrqAAAAAJ&hl=en
         # - icon: github
           # icon_pack: fab
-          name: GitHub
+        - name: GitHub
           link: https://github.com/timbode
         # - icon: linkedin
           # icon_pack: fab
-          name: LinkedIn
+        - name: LinkedIn
           link: https://www.linkedin.com/in/tim-bode-808b54149/
       # Automatically link email and phone or display as text?
       autolink: false
