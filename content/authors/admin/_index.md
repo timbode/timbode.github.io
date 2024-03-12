@@ -31,12 +31,17 @@ bio: My research interests include quantum algorithms, quantum simulation and no
 interests:
   - Quantum algorithms
   - Quantum simluation
+  - Quantum combinatorial optimization
+  - Quantum spin glasses
   - Open quantum systems
+  - Nonequilibrium many-body dynamics
+  - Stochastic processes
+  - Numerical methods for time evolution
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD (_summa cum laude_) in Theoretical Physics
+    - course: PhD (summa cum laude) in Theoretical Physics
       institution: University of Bonn
       year: 2021
     - course: MSc in Physics
@@ -119,6 +124,6 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-<!-- 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-{style="text-align: justify;"} -->
+
+I am a [postdoc](https://www.fz-juelich.de/profile/bode_t) at the [Institute for Quantum Computing Analytics](https://www.fz-juelich.de/en/pgi/pgi-12) (PGI-12) at [Forschungszentrum Jülich](https://www.fz-juelich.de/en), where I am working on [quantum algorithms](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.4.030335) and [quantum simulation](https://arxiv.org/abs/2402.18953). I am also a contributor to the [Julia](https://julialang.org/) packages [QAOA.jl](https://github.com/FZJ-PGI-12/QAOA.jl) and [KadanoffBaym.jl](https://github.com/NonequilibriumDynamics/KadanoffBaym.jl). In 2021, I obtained my PhD in the group for [condensed-matter and many-body theory](https://www.pi.uni-bonn.de/kroha/en) at the [University of Bonn](https://www.uni-bonn.de/en). Both my Master's and Bachelor's degrees are from [ETH Zurich](https://ethz.ch/en.html).
+{style="text-align: justify;"}
