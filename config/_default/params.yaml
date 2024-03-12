@@ -8,6 +8,7 @@
 appearance:
   theme_day: minimal
   theme_night: minimal
+  color: indigo
   font: minimal
   font_size: L
 
