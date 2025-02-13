@@ -1,0 +1,142 @@
+/* Basic Reset (optional but recommended) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes padding and border included in the element's total width and height */
+  }
+
+  a {
+    text-decoration: none; /* Remove underlines from all links */
+    color: #2D5FAA; /* Set the default (unvisited) link color (example: a shade of blue) */
+  }
+  
+  a:visited {
+    color: #2D5FAA; /* Set the color for visited links (example: a shade of purple) */
+  }
+  
+  a:hover {
+    color: #B7293F; /* Keep the existing hover color, or change to your liking */
+  }
+  
+  a:active {
+    color: #B7293F; /* Set the color when the link is actively being clicked (example: red) */
+  }  
+  
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #222222;
+  max-width: 15400px;  /* Adjust to your desired width */
+  margin: 0 auto;    /* Centers the content */
+  padding: 20px;     /* Add padding around the content */
+}
+
+header {
+  background-color: #2D5FAA;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Stay at the top on scroll*/
+  top: 0;
+  z-index: 100; /* Ensure header stays on top of other content */
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Arrange items horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+nav a:hover {
+  color: #B7293F; /* Example hover color */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 100px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#home .home-content {
+  display: grid;
+  grid-template-columns: 256px 1fr; /* 256px for image, remaining for text */
+  gap: 100px; /* Space between the image and text */
+  align-items: center; /* Vertically align items in the grid */
+}
+
+#home .profile-picture img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular (optional) */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* #home .home-text {} */
+
+
+@media (max-width: 768px) {
+  #home .home-content {
+    grid-template-columns: 1fr; /* Stack image and text vertically */
+  }
+
+  #home .profile-picture img {
+    max-width: 150px; /* Limit the image size on small screens */
+    margin: 0 auto;    /* Center the image horizontally */
+    display: block;    /* Ensure margin auto works */
+  }
+}
+
+/* Style the caption container */
+.profile-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+/* Style the logo links */
+.profile-caption a {
+  margin: 0 5px;
+  display: inline-flex; /* Use inline-flex for better control */
+  align-items: center;   /* Vertically center within the link */
+  justify-content: center; /* Horizontally center within the link */
+  width: 30px;       /* Set a fixed width for all links */
+  height: 30px;      /* Set a fixed height for all links (adjust to your liking) */
+}
+
+/* Style the logos */
+.profile-caption img {
+  max-width: 100%;     /* Make the image fill the link's width */
+  max-height: 100%;    /* Make the image fill the link's height */
+  width: auto;       /* Let the image scale proportionally */
+  height: auto;       /* Let the image scale proportionally */
+  object-fit: contain; /* Ensure the image fits within the box without cropping */
+  display: block;      /* Removes default inline spacing */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #2D5FAA;
+}
