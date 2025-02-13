@@ -27,7 +27,7 @@ body {
   line-height: 1.6;
   background-color: #ffffff;
   color: #222222;
-  max-width: 15400px;  /* Adjust to your desired width */
+  max-width: 1400px;  /* Adjust to your desired width */
   margin: 0 auto;    /* Centers the content */
   padding: 20px;     /* Add padding around the content */
 }
