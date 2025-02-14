@@ -19,12 +19,12 @@
   }
   
   a:active {
-    color: #B7293F; /* Set the color when the link is actively being clicked (example: red) */
+    color: #fff; /* Set the color when the link is actively being clicked (example: red) */
   }  
   
 body {
   font-family: sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
   background-color: #ffffff;
   color: #222222;
   max-width: 1400px;  /* Adjust to your desired width */
@@ -48,10 +48,12 @@ nav ul {
   display: flex; /* Arrange items horizontally */
   justify-content: center; /* Center items horizontally */
   align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 nav li {
   margin: 0 20px;
+  margin-bottom: 1px; /* Add some spacing between wrapped items */
 }
 
 nav a {
@@ -71,10 +73,14 @@ main {
 
 section {
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 32px;
   background-color: #f4f4f4;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+  text-align: center;
 }
 
 #home .home-content {
@@ -95,6 +101,16 @@ section {
 
 
 @media (max-width: 768px) {
+
+  main {
+    padding: 5px;
+  }
+
+  section {
+    margin-bottom: 30px;
+    padding: 16px;
+  }  
+
   #home .home-content {
     grid-template-columns: 1fr; /* Stack image and text vertically */
   }
@@ -111,7 +127,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 /* Style the logo links */
@@ -120,8 +136,8 @@ section {
   display: inline-flex; /* Use inline-flex for better control */
   align-items: center;   /* Vertically center within the link */
   justify-content: center; /* Horizontally center within the link */
-  width: 30px;       /* Set a fixed width for all links */
-  height: 30px;      /* Set a fixed height for all links (adjust to your liking) */
+  width: 40px;       /* Set a fixed width for all links */
+  height: 40px;      /* Set a fixed height for all links (adjust to your liking) */
 }
 
 /* Style the logos */
