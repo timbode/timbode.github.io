@@ -120,6 +120,27 @@ section {
     margin: 0 auto;    /* Center the image horizontally */
     display: block;    /* Ensure margin auto works */
   }
+
+}
+
+/* Style publication bullet points */
+ul:not(nav ul) {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0px;  /* Remove default padding */
+}
+
+li:not(nav li) {
+  padding-left: 20px; /* Space for the bullet */
+  position: relative;  /* Needed for absolute positioning of the bullet */
+}
+
+li:not(nav li)::before {
+  content: "\2022";  /* Unicode character for a bullet */
+  position: absolute;
+  left: 0;
+  top: -16px; /* Adjust vertical alignment */
+  color: #2D5FAA;   /* Bullet color */
+  font-size: 36px;  /* Bullet size */
 }
 
 /* Style the caption container */
