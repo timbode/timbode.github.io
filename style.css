@@ -39,7 +39,7 @@ main {
 header {
   background-color: #2D5FAA;
   color: #fff;
-  padding: 10px 0;
+  padding: 15px 0;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky; /* Stay at the top on scroll*/
@@ -47,28 +47,49 @@ header {
   z-index: 100; /* Ensure header stays on top of other content */
 }
 
-nav ul {
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mobile-menu-button .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 5px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+nav .nav-links {
   list-style: none;
-  display: flex; /* Arrange items horizontally */
-  justify-content: center; /* Center items horizontally */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap;
 }
 
 nav li {
   margin: 0 20px;
-  margin-bottom: 1px; /* Add some spacing between wrapped items */
+  margin-bottom: 1px;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth color change on hover */
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #B7293F; /* Example hover color */
+  color: #B7293F;
 }
 
 section {
@@ -78,6 +99,21 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   scroll-margin-top: 50px;
+}
+
+h3 {
+  padding: 30px 0px 10px 0px;
+  color: #2D5FAA;
+}
+
+h4 {
+  padding: 20px 0px 10px 0px;
+  /* color: #2D5FAA; */
+}
+
+.application-note {
+  text-align: center;
+  padding-top: 30px;
 }
 
 #contact {
@@ -168,11 +204,6 @@ footer {
     padding: 2px;
   }
 
-  nav li {
-    margin: 0 10px;
-    margin-bottom: 1px; /* Add some spacing between wrapped items */
-  }
-
   section {
     margin-bottom: 30px;
     padding: 16px;
@@ -188,4 +219,37 @@ footer {
     display: block;    /* Ensure margin auto works */
   }
 
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  nav .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-top: 10px;
+  }
+  
+  nav .nav-links.active {
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    margin-bottom: 1px; /* Your original spacing */
+  }
+  
+  /* Fixed close button animation */
+  .mobile-menu-button.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .mobile-menu-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-menu-button.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
