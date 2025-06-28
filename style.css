@@ -1,3 +1,9 @@
+/* Color variables */
+:root {
+  --primary-blue: #2D5FAA;
+  --accent-green: #2daa5f;
+}
+
 /* Basic Reset (optional but recommended) */
 * {
     margin: 0;
@@ -7,7 +13,7 @@
 
   a {
     text-decoration: none; /* Remove underlines from all links */
-    color: #2D5FAA; /* Set the default (unvisited) link color (example: a shade of blue) */
+    color: var(--primary-blue); /* Set the default (unvisited) link color (example: a shade of blue) */
   }
   
   a:visited {
@@ -15,7 +21,7 @@
   }
   
   a:hover {
-    color: #B7293F; /* Keep the existing hover color, or change to your liking */
+    color: var(--accent-green); /* Keep the existing hover color, or change to your liking */
   }
   
   a:active {
@@ -23,7 +29,9 @@
   }  
   
 body {
-  font-family: sans-serif;
+  /* font-family: 'Lora', Georgia, serif; */
+  /* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; */
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
   line-height: 1.8;
   background-color: #ffffff;
   color: #222222;
@@ -89,26 +97,47 @@ nav a {
 }
 
 nav a:hover {
-  color: #B7293F;
+  color: var(--accent-green);
 }
 
 section {
-  margin-bottom: 32px;
-  padding: 32px 50px 50px 32px;
+  margin-bottom: 40px;
+  padding: 40px 60px 60px 40px;
   background-color: #f4f4f4;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   scroll-margin-top: 50px;
+  border-left: 5px solid var(--primary-blue);
+}
+
+h1, h2, h3, h4 {
+  /* font-family: 'Merriweather', Georgia, serif; */
+  /* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; */
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+h2 {
+  color: var(--primary-blue);
+  border-left: 6px solid var(--accent-green);
+  padding-left: 12px;
+  margin-bottom: 18px;
+  border-radius: 3px;
 }
 
 h3 {
-  padding: 30px 0px 10px 0px;
-  color: #2D5FAA;
+  color: var(--primary-blue);
+  /* border-left: 6px solid var(--accent-green); */
+  padding-left: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 3px;
 }
 
 h4 {
-  padding: 20px 0px 10px 0px;
-  /* color: #2D5FAA; */
+  color: var(--accent-green);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
 }
 
 .application-note {
@@ -152,9 +181,9 @@ li:not(nav li)::before {
   content: "\2022";  /* Unicode character for a bullet */
   position: absolute;
   left: 0;
-  top: -16px; /* Adjust vertical alignment */
-  color: #2D5FAA;   /* Bullet color */
-  font-size: 36px;  /* Bullet size */
+  top: -9px; /* Adjust vertical alignment */
+  color: var(--primary-blue);   /* Bullet color */
+  font-size: 25px;  /* Bullet size */
 }
 
 /* Style the caption container */
@@ -189,10 +218,17 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  color: #2D5FAA;
+  color: var(--primary-blue);
 }
 
-
+/* Remove green accent from #contact h2 */
+#contact h2 {
+  color: var(--primary-blue);
+  border-left: none;
+  padding-left: 0;
+  margin-bottom: 18px;
+  border-radius: 0;
+}
 
 @media (max-width: 768px) {
 
@@ -252,4 +288,8 @@ footer {
   .mobile-menu-button.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
+
+.highlighted-publications li strong {
+  color: var(--primary-blue);
 }
