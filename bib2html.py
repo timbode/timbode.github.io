@@ -2,7 +2,8 @@ import pybtex.database.input.bibtex as bibtex
 from pybtex.style.formatting.plain import Style as PlainStyle
 from pybtex.backends.html import Backend as HTMLBackend
 from pybtex.style.formatting import BaseStyle, toplevel
-from pybtex.style.template import join
+from pybtex.style.template import join, field, optional, sentence, tag, words
+from pybtex.richtext import Text, Tag
 
 class YearSortedStyle(PlainStyle):
     def format_bibliography(self, bib_data):
@@ -12,7 +13,7 @@ class YearSortedStyle(PlainStyle):
         
         for key in bib_data.entries:
             entry = bib_data.entries[key]
-            formatted_entry = self.format_entry('article', entry)
+            formatted_entry = self.format_entry(entry.type, entry)
             # Store the year along with the formatted entry
             try:
                 year = int(entry.fields.get('year', '0'))
@@ -25,6 +26,74 @@ class YearSortedStyle(PlainStyle):
         
         # Return just the formatted entries in sorted order
         return [entry for year, entry in entries_with_year]
+
+    def format_article(self, entry):
+        # Custom formatting: journal normal, volume bold, number normal
+        # Get formatted authors and title from parent class
+        author_text = self.format_names('author', entry)
+        title_text = self.format_title(entry)
+        
+        # Get raw field values
+        journal = entry.fields.get('journal', '')
+        volume = entry.fields.get('volume', '')
+        number = entry.fields.get('number', '')
+        pages = entry.fields.get('pages', '')
+        year = entry.fields.get('year', '')
+        month = entry.fields.get('month', '')
+        doi = entry.fields.get('doi', '')
+        
+        # Build the citation parts
+        parts = [author_text]
+        
+        # Add title
+        if title_text:
+            parts.append(Text('. '))
+            parts.append(title_text)
+        
+        # Add journal (normal text, not italic)
+        if journal:
+            parts.append(Text('. '))
+            parts.append(Text(journal))
+        
+        # Add volume (bold), number (normal), and pages
+        if volume or number or pages:
+            parts.append(Text(', '))
+            
+            if volume:
+                parts.append(Tag('strong', volume))
+            
+            if number:
+                if volume:
+                    parts.append(Text('('))
+                parts.append(Text(number))
+                if volume:
+                    parts.append(Text(')'))
+            
+            if pages:
+                if volume or number:
+                    parts.append(Text(':'))
+                parts.append(Text(pages))
+        
+        # Add date
+        if year:
+            if month:
+                parts.append(Text(', '))
+                parts.append(Text(month))
+                parts.append(Text(' '))
+            else:
+                parts.append(Text(', '))
+            parts.append(Text(year))
+        
+        # Add DOI
+        if doi:
+            parts.append(Text('. '))
+            parts.append(Text('doi:'))
+            parts.append(Text(doi))
+        
+        parts.append(Text('.'))
+        
+        # Combine all parts
+        return Text(*parts)
 
 bib_file = "publications.bib"  # Your .bib file
 output_file = "publications.html"  # Output HTML file

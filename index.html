@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tim Bode - Personal Website</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,6 +22,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#grants-awards">Grants & Awards</a></li>
         <li><a href="#talks">Talks</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -47,7 +49,8 @@
         </div>
         <div class="home-text">
           <h2>Welcome to my personal website!</h2>
-          <p>I am a <a href="https://www.fz-juelich.de/profile/bode_t">postdoc</a> at the <a href="https://www.fz-juelich.de/en/pgi/pgi-12">Institute for Quantum Computing Analytics</a> (PGI-12) at <a href="https://www.fz-juelich.de/en">Forschungszentrum Jülich</a>, where I am working on <a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.4.030335">quantum algorithms</a> and <a href="https://arxiv.org/abs/2402.18953">quantum simulation</a>. I am also a contributor to the Julia packages <a href="https://github.com/FZJ-PGI-12/QAOA.jl">QAOA.jl</a> and <a href="https://github.com/NonequilibriumDynamics/KadanoffBaym.jl">KadanoffBaym.jl</a>. In 2021, I obtained my PhD in the group for <a href="https://www.pi.uni-bonn.de/kroha/en">condensed-matter and many-body theory</a> at the <a href="https://www.uni-bonn.de/en">University of Bonn</a>. Both my Master's and Bachelor's degrees are from <a href="https://ethz.ch/en.html">ETH Zurich</a>.</p>
+          <p>I am the leader of the <a href="https://quicopt.github.io">Quicopt project</a> at the <a href="https://www.fz-juelich.de/profile/bode_t">Institute for Quantum Computing Analytics</a> (PGI-12) at <a href="https://www.fz-juelich.de/en">Forschungszentrum Jülich</a></b>, 
+             where I am working on <a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.4.030335">quantum algorithms</a> and <a href="https://arxiv.org/abs/2402.18953">quantum simulation</a>. I am also a contributor to the Julia packages <a href="https://github.com/FZJ-PGI-12/QAOA.jl">QAOA.jl</a> and <a href="https://github.com/NonequilibriumDynamics/KadanoffBaym.jl">KadanoffBaym.jl</a>. In 2021, I obtained my PhD in the group for <a href="https://www.pi.uni-bonn.de/kroha/en">condensed-matter and many-body theory</a> at the <a href="https://www.uni-bonn.de/en">University of Bonn</a>. Both my Master's and Bachelor's degrees are from <a href="https://ethz.ch/en.html">ETH Zurich</a>.</p>
         </div>
       </div>
     </section>
@@ -77,18 +80,22 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <h3>Quicopt - Helmholtz Field Study Fellowship</h3>
+      <h3>Quicopt - Helmholtz Enterprise Spin-Off</h3>
       <p>We are part of the <a href="https://www.helmholtz.de/en/transfer/helmholtz-association-transfer-instruments/helmholtz-enterprise/">2024 Batch</a> of the <a href="https://www.helmholtz.de/transfer/innovations-und-foerderprogramme/helmholtz-enterprise/">Helmholtz Enterprise program</a>.</p>
-      <p>Quicopt is developing optimization software inspired by quantum physics to efficiently solve combinatorial optimization problems. This technology aims to help companies in various industries improve business decisions and reduce costs.</p>
+      <p>Quicopt is developing optimization software inspired by quantum physics to efficiently solve optimization problems. This technology is going to help companies in various industries to improve business decisions and reduce costs.</p>
 
       <h3>Master's Thesis in Quantum Optimization</h3>
       <p>
-        We are looking for a highly motivated student to work on one of a variety of research ideas revolving around the general topic of quantum optimization. The direct day-to-day supervision will be provided by me. Recent papers that have come forth out of Master's projects in our group are <a href="https://arxiv.org/abs/2411.19388">arxiv:2411.19388</a> and <a href="https://doi.org/10.1103/PhysRevA.111.032411">Phys. Rev. A <b>111</b>, 032411 (2025)</a>. PGI-12 is a lively and supportive institute with access to great infrastructure.
+        We are looking for a motivated student to work on one of a variety of research ideas revolving around the general topic of quantum optimization. 
+        The direct day-to-day supervision will be provided by me. 
+        Recent papers that have come forth out of Master's projects in our group 
+        are <a href="https://doi.org/10.1103/PhysRevResearch.7.023165">Phys. Rev. Res. <b>7</b>, 023165 (2025)</a>, <a href="https://doi.org/10.1103/PhysRevA.111.032411">Phys. Rev. A <b>111</b>, 032411 (2025)</a>, and <a href="https://doi.org/10.48550/arXiv.2507.10360">arxiv:2507.10360</a>. 
+        PGI-12 is a lively and supportive institute with access to great infrastructure.
     </p>
 
     <h4>Possible research directions:</h4>
     <ul>
-        <li>Algorithm development for quantum continuous optimization.</li>
+        <li>Algorithm development for quantum optimization.</li>
         <li>Algorithm development for low-autocorrelation binary sequences.</li>
         <li>Algorithmic benchmarking: parallel tempering, simulated-bifurcation method, semi-definite programming etc. against our methods.</li>
         <li>High-performance computing: accelerate our methods via special-purpose hardware (e.g. GPUs).</li>
@@ -96,14 +103,13 @@
 
     <h4>Candidate requirements:</h4>
     <ul>
-        <li>Strong grades in theoretical physics, in particular quantum mechanics.</li>
-        <li>Demonstrated programming experience in Julia or similar.</li>
-        <li>Some knowledge of quantum field theory is a plus.</li>
+        <li>Good grades in theoretical physics, preferably quantum mechanics.</li>
+        <li>Programming experience in Python or similar.</li>
         <li>Motivation to push a research topic independently.</li>
-        <li>The official first supervisor needs to come from the student's home university (RWTH Aachen, Uni Cologne or Uni Bonn).</li>
+        <li>The official first supervisor needs to come from the student's home university (usually RWTH Aachen, Uni Cologne or Uni Bonn).</li>
     </ul>
     
-    <h4 class="application-note">Applications should include CV, transcripts and, if possible, coding examples.</h4>
+    <h4 class="application-note">Applications should include CV and transcripts.</h4>
     </section>
 
     <section id="publications">
@@ -172,9 +178,24 @@
         </ul>                  
     </section>
 
+    <section id="grants-awards">
+      <h2>Grants & Awards</h2>
+      <ul>
+        <li>December 2025 - Start-up Transfer.NRW.</li>
+        <li>November 2025 - Helmholtz Enterprise Spin-Off.</li>
+        <li>November 2024 - Helmholtz Enterprise Field Study Fellowship.</li>
+        <li>February 2021 - Graduated with distinction <i>(summa cum laude)</i>, University of Bonn.</li>
+        <li>September 2016 - Honors-branch Scholarship, </a>Bonn-Cologne Graduate School of Physics.</li>
+      </ul>
+    </section>
+
     <section id="talks">
       <h2>Talks</h2>
       <ul>
+        <li>December 2025 - ZEBRA Accelerator, Start-up Village Jülich, <em>Demo-Day Pitch</em>.</li>
+        <li>November 2025 - Helmholtz-Gemeinschaft, Berlin, <em>41. Intake Pitch Helmholtz Enterprise Program</em>.</li>
+        <li>November 2025 - ASML, Veldhoven, <em>Masterclass #81: Quantum Computing</em>.</li>
+        <li>November 2025 - Innovationsförderagentur NRW, Düsseldorf, <em>Pitch Start-up Transfer.NRW</em>.</li>
         <li>May 2025 - Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI), Kaiserslautern, <em>Quantum (-Inspired) Optimization</em>. </li>
         <li>April 2025 - German Aerospace Center (DLR), <em>Journal Club</em>. </li>
         <li>April 2025 - William I. Fine Theoretical Physics Institute, University of Minnesota, <em>Quantum-Inspired Optimization: Lessons and Perspectives</em>. </li>
