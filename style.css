@@ -45,11 +45,11 @@ main {
 }
 
 header {
-  background-color: #2D5FAA;
-  color: #fff;
+  background-color: #f4f4f4;
+  color: var(--primary-blue);
   padding: 15px 0;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   position: sticky; /* Stay at the top on scroll*/
   top: 0;
   z-index: 100; /* Ensure header stays on top of other content */
@@ -90,7 +90,7 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: var(--primary-blue);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -105,7 +105,7 @@ section {
   padding: 40px 60px 60px 40px;
   background-color: #f4f4f4;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   scroll-margin-top: 50px;
   border-left: 5px solid var(--primary-blue);
 }
@@ -187,6 +187,49 @@ li:not(nav li)::before {
   font-size: 25px;  /* Bullet size */
 }
 
+.selected-pubs {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.highlighted-publications {
+  flex: 1;
+}
+
+.hpubs-image {
+  flex: 0 0 650px;
+  width: 650px;
+  height: auto;
+  margin-top: 0px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Project item container */
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-content {
+  flex: 1;
+  margin-right: 100px;
+}
+
+.project-image {
+  flex: 0 0 300px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 30px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+
 /* Style the caption container */
 .profile-caption {
   display: flex;
@@ -231,6 +274,11 @@ footer {
   border-radius: 0;
 }
 
+.highlighted-publications li strong {
+  color: var(--primary-blue);
+}
+
+
 @media (max-width: 768px) {
 
   body {
@@ -245,6 +293,10 @@ footer {
     margin-bottom: 30px;
     padding: 16px;
   }  
+
+  h3 {
+    font-size: 12pt;
+  }
 
   #home .home-content {
     grid-template-columns: 1fr; /* Stack image and text vertically */
@@ -289,8 +341,24 @@ footer {
   .mobile-menu-button.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
 
-.highlighted-publications li strong {
-  color: var(--primary-blue);
+  .project-item {
+    flex-direction: column;
+  }
+
+  .project-content {
+    margin-right: 2px;
+  }
+
+  .project-image {
+      display: none;
+  }  
+
+  .selected-pubs {
+    flex-direction: column;
+  }
+
+  .hpubs-image {
+      display: none;
+  }  
 }
