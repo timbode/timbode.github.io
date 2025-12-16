@@ -72,7 +72,7 @@ header {
   width: 25px;
   height: 3px;
   margin: 5px 5px;
-  background-color: #fff;
+  background-color: var(--primary-blue);
   transition: transform 0.3s ease;
 }
 
