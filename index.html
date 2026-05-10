@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="images/web_icon.svg" type="image/svg+xml">
   <link rel="shortcut icon" href="images/web_icon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#1f3b73">
@@ -62,10 +62,20 @@
             MSc and BSc from <a href="https://ethz.ch/en.html">ETH Zurich</a>.
           </p>
 
-          <pre class="status-block" aria-label="Currently">
-<span class="status-key">now     </span>· scaling Quicopt toward spin-off
-<span class="status-key">research</span>· quantum and quantum-inspired optimization algorithms
-<span class="status-key">open to </span>· pilot projects with industry</pre>
+          <dl class="status-block" aria-label="Currently">
+            <div class="status-row">
+              <dt>now</dt>
+              <dd>scaling Quicopt toward spin-off</dd>
+            </div>
+            <div class="status-row">
+              <dt>research</dt>
+              <dd>quantum and quantum-inspired optimization algorithms</dd>
+            </div>
+            <div class="status-row">
+              <dt>open to</dt>
+              <dd>pilot projects with industry</dd>
+            </div>
+          </dl>
 
           <ul class="hero-links">
             <li><a href="https://scholar.google.co.th/citations?user=8NLnrqAAAAAJ&hl=en">Scholar</a></li>
@@ -81,47 +91,52 @@
       </div>
     </section>
 
+    <hr class="divider" aria-hidden="true">
+
     <section id="quicopt">
-      <header class="section-head">
-        <span class="section-num">§1</span>
-        <h2>Quicopt</h2>
+      <header class="section-head section-head--logo">
+        <span class="section-num">§ I</span>
+        <h2 class="quicopt-headline">
+          <img src="images/Quicopt_Logo_Color.png" alt="Quicopt">
+        </h2>
       </header>
 
-      <div class="quicopt-grid">
-        <div class="quicopt-text">
-          <p class="section-lede">
-            Quicopt builds optimization software inspired by quantum physics
-            for problems that classical solvers handle poorly — scheduling,
-            allocation, design — at the scales where industry actually feels them.
-            We sit between hard physics and applied software, and we ship.
-          </p>
+      <div class="quicopt-text">
+        <p class="section-lede">
+          Quicopt builds optimization software inspired by quantum physics
+          for problems that classical solvers handle poorly — multi-supplier
+          BOM sourcing, AC optimal power flow, blending and pooling, native
+          higher-order binary optimization. It runs on standard hardware, no
+          QPU required. Hard physics, applied software, shipped.
+        </p>
 
-          <ul class="signals">
-            <li><span class="signal-year">2025 / 12</span><span class="signal-body">Start-up Transfer.NRW grant.</span></li>
-            <li><span class="signal-year">2025 / 11</span><span class="signal-body">Helmholtz Enterprise Spin-Off — accepted into the 41st intake.</span></li>
-            <li><span class="signal-year">2024 / 11</span><span class="signal-body">Helmholtz Enterprise Field Study Fellowship.</span></li>
-            <li><span class="signal-year">talks</span><span class="signal-body">ASML, NASA Ames, U. Minnesota, DFKI, DLR, ZEBRA Demo Day.</span></li>
-          </ul>
+        <ul class="signals">
+          <li><span class="signal-year">2025 / 12</span><span class="signal-body">Start-up Transfer.NRW grant.</span></li>
+          <li><span class="signal-year">2025 / 11</span><span class="signal-body">Helmholtz Enterprise Spin-Off — accepted into the 41st intake.</span></li>
+          <li><span class="signal-year">2024 / 11</span><span class="signal-body">Helmholtz Enterprise Field Study Fellowship.</span></li>
+          <li><span class="signal-year">talks</span><span class="signal-body">ASML, NASA Ames, U. Minnesota, DFKI, DLR, ZEBRA Demo Day.</span></li>
+        </ul>
 
-          <p class="cta-row">
-            <a class="cta" href="https://quicopt.com">quicopt.com <span class="arrow">→</span></a>
-          </p>
-        </div>
-        <div class="quicopt-logo">
-          <img src="images/Quicopt_Logo_Color.png" alt="Quicopt logo">
-        </div>
+        <p class="cta-row">
+          <a class="cta" href="https://quicopt.com">quicopt.com <span class="arrow">→</span></a>
+        </p>
       </div>
     </section>
 
+    <hr class="divider" aria-hidden="true">
+
     <section id="research">
       <header class="section-head">
-        <span class="section-num">§2</span>
+        <span class="section-num">§ II</span>
         <h2>Research</h2>
       </header>
 
       <p class="section-lede">
-        The line of work below runs from non-equilibrium field theory through
-        mean-field optimization to beyond-mean-field corrections.
+        My work runs from non-equilibrium field theory through mean-field
+        optimization to beyond-mean-field corrections, with sidelines into
+        field-theoretic methods for stochastic processes (<em>J. Phys. A</em>)
+        and experimental photon condensation (<em>Science</em>) — first-,
+        last-, and sole-author contributions among them.
       </p>
 
       <h3 class="subhead">Selected publications</h3>
@@ -254,9 +269,11 @@
       </details>
     </section>
 
+    <hr class="divider" aria-hidden="true">
+
     <section id="talks">
       <header class="section-head">
-        <span class="section-num">§3</span>
+        <span class="section-num">§ III</span>
         <h2>Talks</h2>
       </header>
 
@@ -290,9 +307,11 @@
       </details>
     </section>
 
+    <hr class="divider" aria-hidden="true">
+
     <section id="awards">
       <header class="section-head">
-        <span class="section-num">§4</span>
+        <span class="section-num">§ IV</span>
         <h2>Grants &amp; Awards</h2>
       </header>
 
@@ -320,7 +339,7 @@
 
     <section id="contact">
       <header class="section-head">
-        <span class="section-num">§5</span>
+        <span class="section-num">§ V</span>
         <h2>Contact</h2>
       </header>
 
@@ -340,7 +359,16 @@
   </main>
 
   <footer>
-    <p>© 2026 Tim Bode <span class="sep">·</span> <span class="mono">timbode.github.io</span></p>
+    <p class="footer-eq" aria-label="H sub Z equals minus sum over i less than j of J i j Z i Z j minus sum over i of h i Z i">
+      <em>H</em><sub><em>Z</em></sub>
+      &nbsp;=&nbsp;
+      −<span class="bigsum">∑</span><sub class="sumlim"><em>i</em>&lt;<em>j</em></sub>
+      <em>J</em><sub><em>ij</em></sub> <em>Z</em><sub><em>i</em></sub><em>Z</em><sub><em>j</em></sub>
+      &nbsp;−&nbsp;
+      <span class="bigsum">∑</span><sub class="sumlim"><em>i</em></sub>
+      <em>h</em><sub><em>i</em></sub> <em>Z</em><sub><em>i</em></sub>
+    </p>
+    <p class="footer-meta">© 2026 Tim Bode</p>
   </footer>
 
 <script src="script.js"></script>

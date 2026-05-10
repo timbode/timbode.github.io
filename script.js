@@ -139,20 +139,38 @@ function initOptGraph() {
     return true;
   };
 
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    for (let i = 0; i < 12; i++) step();
+    return;
+  }
 
   const figure = document.querySelector('.hero-motif');
   if (!figure) return;
 
+  const ON_LOAD_STEPS = 10;
+  const FIRST_PAINT_DELAY = 700;
+
   let timer = null;
-  const start = () => {
+  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+  const startBounded = (maxSteps) => {
+    if (timer) return;
+    if (converged()) seed();
+    let n = 0;
+    timer = setInterval(() => {
+      step();
+      if (++n >= maxSteps) stop();
+    }, STEP_MS);
+  };
+  const startContinuous = () => {
     if (timer) return;
     if (converged()) seed();
     timer = setInterval(step, STEP_MS);
   };
-  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
 
-  figure.addEventListener('mouseenter', start);
+  // First paint: show the optimization converging from noise, then freeze.
+  setTimeout(() => startBounded(ON_LOAD_STEPS), FIRST_PAINT_DELAY);
+
+  figure.addEventListener('mouseenter', startContinuous);
   figure.addEventListener('mouseleave', stop);
   document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
   figure.addEventListener('click', e => {
