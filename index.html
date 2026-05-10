@@ -3,45 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Tim Bode - Researcher in Quantum Optimization</title>
+  <title>Tim Bode — Quicopt</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="images/web_icon.svg" type="image/svg+xml">
   <link rel="shortcut icon" href="images/web_icon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#2d5faa">
-  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta name="theme-color" content="#1f3b73">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Dr. Tim Bode - Researcher in Quantum Optimization">
-  <meta property="og:title" content="Dr. Tim Bode - Researcher in Quantum Optimization">
-  <meta property="og:description" content="Academic researcher specializing in quantum optimization, hybrid algorithms, and practical quantum applications.">
+  <meta property="og:site_name" content="Tim Bode — Quicopt">
+  <meta property="og:title" content="Tim Bode — Quicopt">
+  <meta property="og:description" content="I lead Quicopt, a quantum-inspired optimization spin-off out of Forschungszentrum Jülich.">
   <meta property="og:url" content="https://timbode.github.io/">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image" content="https://timbode.github.io/images/processor.png">
-  <meta property="og:image:alt" content="Dr. Tim Bode - Researcher in Quantum Optimization">
+  <meta property="og:image:alt" content="Tim Bode — Quicopt">
   <meta property="og:locale" content="en">
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dr. Tim Bode - Researcher in Quantum Optimization">
-  <meta name="twitter:description" content="Dr. Tim Bode - Researcher in Quantum Optimization">
+  <meta name="twitter:title" content="Tim Bode — Quicopt">
+  <meta name="twitter:description" content="I lead Quicopt, a quantum-inspired optimization spin-off out of Forschungszentrum Jülich.">
   <meta name="twitter:image" content="https://timbode.github.io/images/processor.png">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <button class="mobile-menu-button">
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="#home" class="site-mark">Tim Bode</a>
+      <button class="mobile-menu-button" aria-label="Toggle menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#grants-awards">Grants & Awards</a></li>
+        <li><a href="#quicopt">Quicopt</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#talks">Talks</a></li>
+        <li><a href="#awards">Awards</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -49,291 +47,300 @@
 
   <main>
 
-    <section id="home">
-      <div class="home-content">
-        <div class="profile-picture">
-          <img src="images/avatar.jpg" alt="Tim Bode">
-          <div class="profile-caption">
-            <a href="https://scholar.google.co.th/citations?user=8NLnrqAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-              <img src="images/Google_Scholar_logo.svg.png" alt="Google Scholar">
-            </a>
-            <a href="https://github.com/timbode" target="_blank" rel="noopener noreferrer">
-              <img src="images/github-mark.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/tim-bode-808b54149/" target="_blank" rel="noopener noreferrer">
-              <img src="images/In-Blue-128.png" alt="LinkedIn">
-            </a>
-          </div>
-        </div>
-        <div class="home-text">
-          <h2>Dr. Tim Bode - Researcher in Quantum Optimization</h2>
-          <p>Welcome! I am the leader of the <a href="https://quicopt.github.io">Quicopt project</a> at the <a href="https://www.fz-juelich.de/profile/bode_t">Institute for Quantum Computing Analytics</a> (PGI-12) 
-             at <a href="https://www.fz-juelich.de/en">Forschungszentrum Jülich</a></b>.  
-             In 2021, I obtained my PhD in the group for <a href="https://www.pi.uni-bonn.de/kroha/en">condensed-matter and many-body theory</a> at the <a href="https://www.uni-bonn.de/en">University of Bonn</a>. 
-             Both my Master's and Bachelor's degrees are from <a href="https://ethz.ch/en.html">ETH Zurich</a>.</p>
-        </div>
-      </div>
-    </section>
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">group leader · prospective founder</p>
+          <h1 class="hero-name">Tim Bode</h1>
+          <p class="lede">
+            I lead <a href="https://quicopt.com">Quicopt</a> — a quantum-inspired optimization
+            spin-off out of <a href="https://www.fz-juelich.de/en">Forschungszentrum Jülich</a>.
+          </p>
+          <p class="bio">
+            Previously: PhD in condensed-matter and many-body theory at the
+            <a href="https://www.pi.uni-bonn.de/kroha/en">University of Bonn</a> (<em>summa cum laude</em>, 2021).
+            MSc and BSc from <a href="https://ethz.ch/en.html">ETH Zurich</a>.
+          </p>
 
-    <section id="highlighted-publications">
-      <h2>Selected Publications</h2>
+          <pre class="status-block" aria-label="Currently">
+<span class="status-key">now     </span>· scaling Quicopt toward spin-off
+<span class="status-key">research</span>· quantum and quantum-inspired optimization algorithms
+<span class="status-key">open to </span>· pilot projects with industry</pre>
 
-      <div class="selected-pubs">
-        <div class="highlighted-publications">
-          <ul>
-            <li>
-              <strong>Beyond-mean-field fluctuations for the solution of constraint satisfaction problems</strong><br>
-              arXiv:2507.10360 (2025).<br>
-              <a href="https://doi.org/10.48550/arXiv.2507.10360">doi:10.48550/arXiv.2507.10360</a>
-            </li>  
-            <li>
-              <strong>Quantum combinatorial optimization beyond the variational paradigm: simple schedules for hard problems</strong><br>
-              Phys. Rev. A, <strong>111</strong>, 032411 (2025).<br>
-              <a href="https://doi.org/10.1103/PhysRevA.111.032411">doi:10.1103/PhysRevA.111.032411</a>
-            </li>
-            <li>
-              <strong>Mean-Field Approximate Optimization Algorithm</strong><br>
-              PRX Quantum, <strong>4</strong>, 030335 (2023).<br>
-              <a href="https://doi.org/10.1103/PRXQuantum.4.030335">doi:10.1103/PRXQuantum.4.030335</a>
-            </li>
+          <ul class="hero-links">
+            <li><a href="https://scholar.google.co.th/citations?user=8NLnrqAAAAAJ&hl=en">Scholar</a></li>
+            <li><a href="https://github.com/timbode">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/tim-bode-808b54149/">LinkedIn</a></li>
+            <li><a href="https://www.fz-juelich.de/profile/bode_t">FZJ</a></li>
           </ul>
         </div>
-        <img src="images/fidelity_N_11_seeds_2809_100061.png" alt="Publications" class="hpubs-image">
+
+        <figure class="hero-motif">
+          <svg id="opt-graph" role="img" aria-label="A random graph instance with mean-field iteration on hover" preserveAspectRatio="xMidYMid meet"></svg>
+        </figure>
       </div>
     </section>
 
-    <!-- <section id="projects">
-      <h2>Projects</h2>
-      <h3>Quicopt - Helmholtz Enterprise Spin-Off</h3>
-      <p>We are part of the <a href="https://www.helmholtz.de/en/transfer/helmholtz-association-transfer-instruments/helmholtz-enterprise/">2024 Batch</a> of the <a href="https://www.helmholtz.de/transfer/innovations-und-foerderprogramme/helmholtz-enterprise/">Helmholtz Enterprise program</a>.
-         Quicopt is developing optimization software inspired by quantum physics to efficiently solve optimization problems. Our technology is going to help companies in various industries to improve business decisions and reduce costs.</p>
+    <section id="quicopt">
+      <header class="section-head">
+        <span class="section-num">§1</span>
+        <h2>Quicopt</h2>
+      </header>
 
-      <h3>Master's Thesis in Quantum Optimization</h3>
-      <p>
-        We are looking for a motivated student to work on one of a variety of research ideas revolving around the general topic of quantum optimization. 
-        The direct day-to-day supervision will be provided by me. 
-        Recent papers that have come forth out of Master's projects in our group 
-        are <a href="https://doi.org/10.1103/PhysRevResearch.7.023165">Phys. Rev. Res. <b>7</b>, 023165 (2025)</a>, 
-        <a href="https://doi.org/10.1103/PhysRevA.111.032411">Phys. Rev. A <b>111</b>, 032411 (2025)</a>, 
-        and <a href="https://doi.org/10.48550/arXiv.2507.10360">arxiv:2507.10360</a>. 
-        PGI-12 is a lively and supportive institute with access to great infrastructure.
-    </p>
+      <div class="quicopt-grid">
+        <div class="quicopt-text">
+          <p class="section-lede">
+            Quicopt builds optimization software inspired by quantum physics
+            for problems that classical solvers handle poorly — scheduling,
+            allocation, design — at the scales where industry actually feels them.
+            We sit between hard physics and applied software, and we ship.
+          </p>
 
-    <h4>Possible research directions:</h4>
-    <ul>
-        <li>Algorithm development for quantum optimization.</li>
-        <li>Algorithm development for low-autocorrelation binary sequences.</li>
-        <li>Algorithmic benchmarking: parallel tempering, simulated-bifurcation method, semi-definite programming etc. against our methods.</li>
-        <li>High-performance computing: accelerate our methods via special-purpose hardware (e.g. GPUs).</li>
-    </ul>
+          <ul class="signals">
+            <li><span class="signal-year">2025 / 12</span><span class="signal-body">Start-up Transfer.NRW grant.</span></li>
+            <li><span class="signal-year">2025 / 11</span><span class="signal-body">Helmholtz Enterprise Spin-Off — accepted into the 41st intake.</span></li>
+            <li><span class="signal-year">2024 / 11</span><span class="signal-body">Helmholtz Enterprise Field Study Fellowship.</span></li>
+            <li><span class="signal-year">talks</span><span class="signal-body">ASML, NASA Ames, U. Minnesota, DFKI, DLR, ZEBRA Demo Day.</span></li>
+          </ul>
 
-    <h4>Candidate requirements:</h4>
-    <ul>
-        <li>Good grades in theoretical physics, preferably quantum mechanics.</li>
-        <li>Programming experience in Python or similar.</li>
-        <li>Motivation to push a research topic independently.</li>
-        <li>The official first supervisor needs to come from the student's home university (usually RWTH Aachen, Uni Cologne or Uni Bonn).</li>
-    </ul>
-    
-    <h4 class="application-note">Applications should include CV and transcripts. Contact details below.</h4>
-    </section> -->
-
-    <section id="projects">
-      <h2>Projects</h2>
-      
-      <div class="project-item">
-          <div class="project-content">
-              <h3>Quicopt - Helmholtz Enterprise Spin-Off</h3>
-              <p>We are part of the <a href="https://www.helmholtz.de/en/transfer/helmholtz-association-transfer-instruments/helmholtz-enterprise/">2024 Batch</a> of the <a href="https://www.helmholtz.de/transfer/innovations-und-foerderprogramme/helmholtz-enterprise/">Helmholtz Enterprise program</a>.
-                 Quicopt is developing optimization software inspired by quantum physics to efficiently solve optimization problems. Our technology is going to help companies in various industries to improve business decisions and reduce costs.</p>
-          </div>
-          <img src="images/Quicopt_Logo_Color.png" alt="Quicopt Project" class="project-image", style="width:500px;">
-      </div>
-
-      <div class="project-item">
-          <div class="project-content">
-              <h3>Master's Thesis in Quantum Optimization</h3>
-              <p>
-                  We are looking for a motivated student to work on one of a variety of research ideas revolving around the general topic of quantum optimization. 
-                  The direct day-to-day supervision will be provided by me. 
-                  Recent papers that have come forth out of Master's projects in our group 
-                  are 
-                  <ul>
-                    <li><a href="https://doi.org/10.1103/PhysRevResearch.7.023165">Phys. Rev. Res. <b>7</b>, 023165 (2025)</a>, </li>
-                    <li><a href="https://doi.org/10.1103/PhysRevA.111.032411">Phys. Rev. A <b>111</b>, 032411 (2025)</a>,</li>
-                    <li><a href="https://doi.org/10.48550/arXiv.2507.10360">arxiv:2507.10360</a>. </li>
-                  </ul>
-                  PGI-12 is a lively and supportive institute with access to great infrastructure.
-              </p>
-              <h4>Possible research directions:</h4>
-              <ul>
-                  <li>Algorithm development for quantum optimization.</li>
-                  <li>Algorithm development for low-autocorrelation binary sequences.</li>
-                  <li>Algorithmic benchmarking: the QAOA, parallel tempering, simulated-bifurcation method, genetic algorithms, semi-definite programming etc. against our methods.</li>
-                  <li>High-performance computing: accelerate our methods via special-purpose hardware (e.g. GPUs).</li>
-              </ul>
-              <h4>Candidate requirements:</h4>
-              <ul>
-                  <li>Good grades in theoretical physics, preferably quantum mechanics.</li>
-                  <li>Programming experience in Python or similar.</li>
-                  <li>Motivation to push a research topic independently.</li>
-                  <li>The official first supervisor needs to come from the student's home university.</li>
-              </ul>
-              <h4 class="application-note">Applications should include a motivation letter, CV and transcripts. Contact details below.</h4>
-          </div>
-          <img src="images/masters_project.png" alt="Master's Thesis" class="project-image">
-      </div>
-
-      <div class="project-item">
-        <div class="project-content">
-            <h3>Bachelor's Thesis Projects</h3>
-            <p>
-                We are <em>also</em> looking for motivated students to pursue Bachelor's projects in our group. 
-                If you are interested in learning a handy mixture of analytical and numerical techniques, have a look at the revolving list of topics below. 
-                PGI-12 is a lively and supportive institute with access to great infrastructure.
-            </p>
-            <h4>Possible research directions:</h4>
-            <ul>
-              <li>Mathematical optimization: simplex algorithm, branch-and-bound, hybrid genetic search.</li>
-              <li>GPU programming in Julia: acceleration of simulated quantum circuits.</li>
-              <li>Analytical and numerical methods for dynamical systems.</li>
-            </ul>
-            <h4>Candidate requirements:</h4>
-            <ul>
-                <li>Good grades in maths and/or theoretical physics, preferably quantum mechanics.</li>
-                <li>Interest in programming in Julia/Python/C.</li>
-                <li>Motivation to work somewhat independently.</li>
-                <li>The official first supervisor needs to come from the student's home university.</li>
-            </ul>
-            <h4 class="application-note">Applications should include a short motivation letter and transcripts. Contact details below.</h4>
+          <p class="cta-row">
+            <a class="cta" href="https://quicopt.com">quicopt.com <span class="arrow">→</span></a>
+          </p>
         </div>
-        <img src="images/bachelors_project.png" alt="Bachelor's Thesis" class="project-image">
-    </div>
+        <div class="quicopt-logo">
+          <img src="images/Quicopt_Logo_Color.png" alt="Quicopt logo">
+        </div>
+      </div>
     </section>
 
-    <section id="publications">
-      <h2>List of Publications</h2>
-        <ul>
-          <li>Niklas Foos, Bastian Epping, Jannik Grundler, Alexandru Ciobanu, Ajainderpal Singh, Tim Bode, Moritz Helias, and David Dahmen.
-            Beyond-mean-field fluctuations for the solution of constraint satisfaction problems.
-            2025.
-            <a href="https://doi.org/10.48550/arXiv.2507.10360">doi:10.48550/arXiv.2507.10360</a>.</li>
-          <li>Thorge Müller, Ajainderpal Singh, Frank&nbsp;K. Wilhelm, and Tim Bode.
-            Limitations of quantum approximate optimization in solving generic higher-order constraint-satisfaction problems.
-            <em>Phys. Rev. Res.</em>, 7:023165, May 2025.
-            <a href="https://doi.org/10.1103/PhysRevResearch.7.023165">doi:10.1103/PhysRevResearch.7.023165</a>.</li>
-            <li>Tim Bode, Krish Ramesh, and Tobias Stollenwerk.
-            Quantum combinatorial optimization beyond the variational paradigm: simple schedules for hard problems.
-            <em>Phys. Rev. A</em>, 111:032411, Mar 2025.
-            <a href="https://doi.org/10.1103/PhysRevA.111.032411">doi:10.1103/PhysRevA.111.032411</a>.</li>
-            <li>Dmitriy&nbsp;S. Shapiro, Yannik Weber, Tim Bode, Frank&nbsp;K. Wilhelm, and Dmitry Bagrets.
-            <span class="bibtex-protected">Quantum Simulation of the Dicke-Ising Model via Digital-Analog Algorithms</span>.
-            2024.
-            <a href="https://arxiv.org/abs/2412.14285">arXiv:2412.14285</a>.</li>
-            <li>Tim Bode and Frank&nbsp;K. Wilhelm.
-            Adiabatic bottlenecks in quantum annealing and nonequilibrium dynamics of paramagnons.
-            <em>Phys. Rev. A</em>, 110:012611, 2024.
-            <a href="https://doi.org/10.1103/PhysRevA.110.012611">doi:10.1103/PhysRevA.110.012611</a>.</li>
-            <li>Tim Bode, Michael Kajan, Francisco Meirinhos, and Johann Kroha.
-            Non-markovian dynamics of open quantum systems via auxiliary particles with exact operator constraint.
-            <em>Phys. Rev. Res.</em>, 6:013220, 2024.
-            <a href="https://doi.org/10.1103/PhysRevResearch.6.013220">doi:10.1103/PhysRevResearch.6.013220</a>.</li>
-            <li>Kevin Lively, Tim Bode, Jochen Szangolies, Jian-Xin Zhu, and Benedikt Fauseweh.
-            Noise robust detection of quantum phase transitions.
-            <em>Phys. Rev. Res.</em>, 6:043254, 2024.
-            <a href="https://doi.org/10.1103/PhysRevResearch.6.043254">doi:10.1103/PhysRevResearch.6.043254</a>.</li>
-            <li>Aditi Misra-Spieldenner, Tim Bode, Peter&nbsp;K. Schuhmacher, Tobias Stollenwerk, Dmitry Bagrets, and Frank&nbsp;K. Wilhelm.
-            <span class="bibtex-protected">Mean-Field Approximate Optimization Algorithm</span>.
-            <em>PRX Quantum</em>, 4:030335, 2023.
-            <a href="https://doi.org/10.1103/PRXQuantum.4.030335">doi:10.1103/PRXQuantum.4.030335</a>.</li>
-            <li>Tim Bode, Dmitry Bagrets, Aditi Misra-Spieldenner, Tobias Stollenwerk, and Frank&nbsp;K. Wilhelm.
-            <span class="bibtex-protected">QAOA.jl: Toolkit for the Quantum and Mean-Field Approximate Optimization Algorithms</span>.
-            <em>Journal of Open Source Software</em>, 8(86):5364, 2023.
-            <a href="https://doi.org/10.21105/joss.05364">doi:10.21105/joss.05364</a>.</li>
-            <li>Francisco Meirinhos, Michael Kajan, Johann Kroha, and Tim Bode.
-            <span class="bibtex-protected">Adaptive numerical solution of Kadanoff-Baym equations</span>.
-            <em>SciPost Phys. Core</em>, 5:030, 2022.
-            <a href="https://doi.org/10.21468/SciPostPhysCore.5.2.030">doi:10.21468/SciPostPhysCore.5.2.030</a>.</li>
-            <li>Tim Bode.
-            The two-particle irreducible effective action for classical stochastic processes.
-            <em>Journal of Physics A: Mathematical and Theoretical</em>, 55(26):265401, 2022.
-            <a href="https://doi.org/10.1088/1751-8121/ac73c6">doi:10.1088/1751-8121/ac73c6</a>.</li>
-            <li>Fahri&nbsp;Emre Öztürk, Tim Lappe, Göran Hellmann, Julian Schmitt, Jan Klaers, Frank Vewinger, Johann Kroha, and Martin Weitz.
-            <span class="bibtex-protected">Observation of a non-Hermitian phase transition in an optical quantum gas</span>.
-            <em>Science</em>, 372(6537):88&ndash;91, 2021.
-            <a href="https://doi.org/10.1126/science.abe9869">doi:10.1126/science.abe9869</a>.</li>
-            <li><span class="bibtex-protected">Tim Lappe</span>.
-            <em><span class="bibtex-protected">Non-Markovian Dynamics of Open Bose-Einstein Condensates</span></em>.
-            PhD thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2021.
-            URL: <a href="https://hdl.handle.net/20.500.11811/8961">https://hdl.handle.net/20.500.11811/8961</a>.</li>
-            <li>Fahri&nbsp;Emre Öztürk, Tim Lappe, Göran Hellmann, Julian Schmitt, Jan Klaers, Frank Vewinger, Johann Kroha, and Martin Weitz.
-            <span class="bibtex-protected">Fluctuation dynamics of an open photon Bose-Einstein condensate</span>.
-            <em>Phys. Rev. A</em>, 100:043803, 2019.
-            <a href="https://doi.org/10.1103/PhysRevA.100.043803">doi:10.1103/PhysRevA.100.043803</a>.</li>
-            <li>Tim Lappe, Anna Posazhennikova, and Johann Kroha.
-            <span class="bibtex-protected">Fluctuation damping of isolated, oscillating Bose-Einstein condensates</span>.
-            <em>Phys. Rev. A</em>, 98:023626, 2018.
-            <a href="https://doi.org/10.1103/PhysRevA.98.023626">doi:10.1103/PhysRevA.98.023626</a>.</li>
-        </ul>                  
-    </section>
+    <section id="research">
+      <header class="section-head">
+        <span class="section-num">§2</span>
+        <h2>Research</h2>
+      </header>
 
-    <section id="grants-awards">
-      <h2>Grants & Awards</h2>
-      <ul>
-        <li>December 2025 - Start-up Transfer.NRW.</li>
-        <li>November 2025 - Helmholtz Enterprise Spin-Off.</li>
-        <li>November 2024 - Helmholtz Enterprise Field Study Fellowship.</li>
-        <li>February 2021 - Graduated with distinction (<i>summa cum laude</i>), University of Bonn.</li>
-        <li>September 2016 - Honors-branch Scholarship, </a>Bonn-Cologne Graduate School of Physics.</li>
-      </ul>
+      <p class="section-lede">
+        The line of work below runs from non-equilibrium field theory through
+        mean-field optimization to beyond-mean-field corrections.
+      </p>
+
+      <h3 class="subhead">Selected publications</h3>
+      <ol class="pubs-selected">
+        <li>
+          <p class="pub-title">Beyond-mean-field fluctuations for the solution of constraint satisfaction problems</p>
+          <p class="pub-meta">Foos, Epping, Grundler, Ciobanu, Singh, <strong>Bode</strong>, Helias, Dahmen — arXiv:2507.10360 (2025)</p>
+          <p class="pub-link"><a href="https://doi.org/10.48550/arXiv.2507.10360">doi:10.48550/arXiv.2507.10360</a></p>
+        </li>
+        <li>
+          <p class="pub-title">Quantum combinatorial optimization beyond the variational paradigm: simple schedules for hard problems</p>
+          <p class="pub-meta"><strong>Bode</strong>, Ramesh, Stollenwerk — Phys. Rev. A <strong>111</strong>, 032411 (2025)</p>
+          <p class="pub-link"><a href="https://doi.org/10.1103/PhysRevA.111.032411">doi:10.1103/PhysRevA.111.032411</a></p>
+        </li>
+        <li>
+          <p class="pub-title">Mean-Field Approximate Optimization Algorithm</p>
+          <p class="pub-meta">Misra-Spieldenner, <strong>Bode</strong>, Schuhmacher, Stollenwerk, Bagrets, Wilhelm — PRX Quantum <strong>4</strong>, 030335 (2023)</p>
+          <p class="pub-link"><a href="https://doi.org/10.1103/PRXQuantum.4.030335">doi:10.1103/PRXQuantum.4.030335</a></p>
+        </li>
+      </ol>
+
+      <figure class="research-figure">
+        <img src="images/fidelity_N_11_seeds_2809_100061.png" alt="An easy spin-glass instance and a hard spin-glass instance">
+        <figcaption>
+          An easy and a hard spin-glass instance, side by side —
+          from <em>Phys. Rev. A</em> <strong>111</strong>, 032411 (2025).
+        </figcaption>
+      </figure>
+
+      <h3 class="subhead">Forthcoming</h3>
+      <p class="forthcoming-note">
+        New manuscripts are in preparation, extending the line above. Titles and
+        preprints will appear here as they do.
+      </p>
+
+      <details class="full-pubs">
+        <summary>Full publication list (15)</summary>
+        <ol class="pubs-full">
+          <li>
+            Foos, Epping, Grundler, Ciobanu, Singh, <strong>Bode</strong>, Helias, Dahmen.
+            <em>Beyond-mean-field fluctuations for the solution of constraint satisfaction problems.</em>
+            arXiv:2507.10360, 2025.
+            <a href="https://doi.org/10.48550/arXiv.2507.10360">link</a>.
+          </li>
+          <li>
+            Müller, Singh, Wilhelm, <strong>Bode</strong>.
+            <em>Limitations of quantum approximate optimization in solving generic higher-order constraint-satisfaction problems.</em>
+            Phys. Rev. Res. <strong>7</strong>, 023165 (2025).
+            <a href="https://doi.org/10.1103/PhysRevResearch.7.023165">link</a>.
+          </li>
+          <li>
+            <strong>Bode</strong>, Ramesh, Stollenwerk.
+            <em>Quantum combinatorial optimization beyond the variational paradigm: simple schedules for hard problems.</em>
+            Phys. Rev. A <strong>111</strong>, 032411 (2025).
+            <a href="https://doi.org/10.1103/PhysRevA.111.032411">link</a>.
+          </li>
+          <li>
+            Shapiro, Weber, <strong>Bode</strong>, Wilhelm, Bagrets.
+            <em>Quantum simulation of the Dicke–Ising model via digital-analog algorithms.</em>
+            arXiv:2412.14285, 2024.
+            <a href="https://arxiv.org/abs/2412.14285">link</a>.
+          </li>
+          <li>
+            <strong>Bode</strong>, Wilhelm.
+            <em>Adiabatic bottlenecks in quantum annealing and nonequilibrium dynamics of paramagnons.</em>
+            Phys. Rev. A <strong>110</strong>, 012611 (2024).
+            <a href="https://doi.org/10.1103/PhysRevA.110.012611">link</a>.
+          </li>
+          <li>
+            <strong>Bode</strong>, Kajan, Meirinhos, Kroha.
+            <em>Non-Markovian dynamics of open quantum systems via auxiliary particles with exact operator constraint.</em>
+            Phys. Rev. Res. <strong>6</strong>, 013220 (2024).
+            <a href="https://doi.org/10.1103/PhysRevResearch.6.013220">link</a>.
+          </li>
+          <li>
+            Lively, <strong>Bode</strong>, Szangolies, Zhu, Fauseweh.
+            <em>Noise-robust detection of quantum phase transitions.</em>
+            Phys. Rev. Res. <strong>6</strong>, 043254 (2024).
+            <a href="https://doi.org/10.1103/PhysRevResearch.6.043254">link</a>.
+          </li>
+          <li>
+            Misra-Spieldenner, <strong>Bode</strong>, Schuhmacher, Stollenwerk, Bagrets, Wilhelm.
+            <em>Mean-field approximate optimization algorithm.</em>
+            PRX Quantum <strong>4</strong>, 030335 (2023).
+            <a href="https://doi.org/10.1103/PRXQuantum.4.030335">link</a>.
+          </li>
+          <li>
+            <strong>Bode</strong>, Bagrets, Misra-Spieldenner, Stollenwerk, Wilhelm.
+            <em>QAOA.jl: toolkit for the quantum and mean-field approximate optimization algorithms.</em>
+            J. Open Source Softw. <strong>8</strong>(86), 5364 (2023).
+            <a href="https://doi.org/10.21105/joss.05364">link</a>.
+          </li>
+          <li>
+            Meirinhos, Kajan, Kroha, <strong>Bode</strong>.
+            <em>Adaptive numerical solution of Kadanoff–Baym equations.</em>
+            SciPost Phys. Core <strong>5</strong>, 030 (2022).
+            <a href="https://doi.org/10.21468/SciPostPhysCore.5.2.030">link</a>.
+          </li>
+          <li>
+            <strong>Bode</strong>.
+            <em>The two-particle irreducible effective action for classical stochastic processes.</em>
+            J. Phys. A: Math. Theor. <strong>55</strong>, 265401 (2022).
+            <a href="https://doi.org/10.1088/1751-8121/ac73c6">link</a>.
+          </li>
+          <li>
+            Öztürk, Lappe, Hellmann, Schmitt, Klaers, Vewinger, Kroha, Weitz.
+            <em>Observation of a non-Hermitian phase transition in an optical quantum gas.</em>
+            Science <strong>372</strong>, 88–91 (2021).
+            <a href="https://doi.org/10.1126/science.abe9869">link</a>.
+          </li>
+          <li>
+            Lappe.
+            <em>Non-Markovian dynamics of open Bose–Einstein condensates.</em>
+            PhD thesis, University of Bonn, 2021.
+            <a href="https://hdl.handle.net/20.500.11811/8961">link</a>.
+          </li>
+          <li>
+            Öztürk, Lappe, Hellmann, Schmitt, Klaers, Vewinger, Kroha, Weitz.
+            <em>Fluctuation dynamics of an open photon Bose–Einstein condensate.</em>
+            Phys. Rev. A <strong>100</strong>, 043803 (2019).
+            <a href="https://doi.org/10.1103/PhysRevA.100.043803">link</a>.
+          </li>
+          <li>
+            Lappe, Posazhennikova, Kroha.
+            <em>Fluctuation damping of isolated, oscillating Bose–Einstein condensates.</em>
+            Phys. Rev. A <strong>98</strong>, 023626 (2018).
+            <a href="https://doi.org/10.1103/PhysRevA.98.023626">link</a>.
+          </li>
+        </ol>
+      </details>
     </section>
 
     <section id="talks">
-      <h2>Talks</h2>
-      <ul>
-        <li>December 2025 - ZEBRA Accelerator, Start-up Village Jülich, <em>Demo-Day Pitch</em>.</li>
-        <li>November 2025 - Helmholtz-Gemeinschaft, Berlin, <em>41. Intake Pitch Helmholtz Enterprise Program</em>.</li>
-        <li>November 2025 - ASML, Veldhoven, <em>Masterclass #81: Quantum Computing</em>.</li>
-        <li>November 2025 - Innovationsförderagentur NRW, Düsseldorf, <em>Pitch Start-up Transfer.NRW</em>.</li>
-        <li>August 2025 - Quantum Future Academy, Forschungszentrum Jülich, <em>Quicopt Project Presentation</em>. </li>
-        <li>May 2025 - Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI), Kaiserslautern, <em>Quantum (-Inspired) Optimization</em>. </li>
-        <li>April 2025 - German Aerospace Center (DLR), <em>Journal Club</em>. </li>
-        <li>April 2025 - William I. Fine Theoretical Physics Institute, University of Minnesota, <em>Quantum-Inspired Optimization: Lessons and Perspectives</em>. </li>
-        <li>March 2025 - NASA Ames, Mountain View, <em>Quantum Optimization and Simulation</em>. </li>
-        <li>March 2025 - DPG March Meeting, University of Bonn, <em>Quantum optimization beyond the variational paradigm</em>. </li>
-        <li>February 2025 - QOQMS Seminar, University of Strathclyde, <em>Quantum optimization beyond the variational paradigm</em>. </li>
-        <li>January 2025 - FZJ Workshop on Bridging Neuromorphic and Quantum Computing, Jülich, <em>Quantum-Inspired Optimization Algorithms</em>. </li>
-        <li>November 2024 - HQS Workshop on QC Applications Beyond the Variational Paradigm, Karlsruhe, <em>Quantum Simulation of Electron-Phonin Interactions in Circuit QED</em>. </li>
-        <li>August 2024 - FZJ Workshop on the QAOA, Jülich, <em>Mean-Field Approximate Optimization</em>. </li>
-        <li>April 2024 - International Network on Quantum Annealing (INQA), <em>Adiabatic Bottlenecks in Quantum Annealing and Nonequilibrium Dynamics of Paramagnons</em> | <a href="https://youtu.be/jMXp0-RdCjM?si=zHvvu4tynH2sDxwu" class="youtube-link">YouTube</a>.</li>
-        <li>Feb 2024 - Institute for Advanced Simulation (IAS-6), Jülich, <em>Mean-Field Combinatorial Optimization Algorithms</em>. </li>
-        <li>March 2022 - APS March Meeting, Chicago, <em>Adaptive Numerical Solution of Kadanoff-Baym Equations</em>. </li>
-        <li>June 2020 - Closing Workshop SFB/TR 185, Bonn, <em>Non-Markovian Dynamics of a Driven-Dissipative Photon Condensate</em>. </li>
-        <li>September 2018 - Intensive Week SFB/TR 185, Bonn, <em>Introduction to Quantum Field Theory</em>. </li>
-        <li>March 2018 - Technische Universität Kaiserslautern, Kaiserslautern, <em>Collapse and revival of
-          photon oscillations</em>. </li>
-      </ul>
-    </section>    
+      <header class="section-head">
+        <span class="section-num">§3</span>
+        <h2>Talks</h2>
+      </header>
+
+      <ol class="talks-list">
+        <li><span class="talk-when">2025 / 12</span><span class="talk-where">ZEBRA Accelerator, Start-up Village Jülich</span><span class="talk-what">Demo-Day Pitch</span></li>
+        <li><span class="talk-when">2025 / 11</span><span class="talk-where">Helmholtz-Gemeinschaft, Berlin</span><span class="talk-what">41st Helmholtz Enterprise Intake Pitch</span></li>
+        <li><span class="talk-when">2025 / 11</span><span class="talk-where">ASML, Veldhoven</span><span class="talk-what">Masterclass #81: Quantum Computing</span></li>
+        <li><span class="talk-when">2025 / 11</span><span class="talk-where">Innovationsförderagentur NRW, Düsseldorf</span><span class="talk-what">Pitch — Start-up Transfer.NRW</span></li>
+        <li><span class="talk-when">2025 / 08</span><span class="talk-where">Quantum Future Academy, Forschungszentrum Jülich</span><span class="talk-what">Quicopt Project Presentation</span></li>
+        <li><span class="talk-when">2025 / 05</span><span class="talk-where">DFKI, Kaiserslautern</span><span class="talk-what">Quantum (-Inspired) Optimization</span></li>
+        <li><span class="talk-when">2025 / 04</span><span class="talk-where">German Aerospace Center (DLR)</span><span class="talk-what">Journal Club</span></li>
+        <li><span class="talk-when">2025 / 04</span><span class="talk-where">Fine Theoretical Physics Institute, U. Minnesota</span><span class="talk-what">Quantum-Inspired Optimization: Lessons and Perspectives</span></li>
+        <li><span class="talk-when">2025 / 03</span><span class="talk-where">NASA Ames, Mountain View</span><span class="talk-what">Quantum Optimization and Simulation</span></li>
+        <li><span class="talk-when">2025 / 03</span><span class="talk-where">DPG March Meeting, U. Bonn</span><span class="talk-what">Quantum optimization beyond the variational paradigm</span></li>
+        <li><span class="talk-when">2025 / 02</span><span class="talk-where">QOQMS Seminar, U. Strathclyde</span><span class="talk-what">Quantum optimization beyond the variational paradigm</span></li>
+        <li><span class="talk-when">2025 / 01</span><span class="talk-where">FZJ Bridging Neuromorphic & Quantum, Jülich</span><span class="talk-what">Quantum-Inspired Optimization Algorithms</span></li>
+      </ol>
+
+      <details class="older-talks">
+        <summary>Earlier talks</summary>
+        <ol class="talks-list">
+          <li><span class="talk-when">2024 / 11</span><span class="talk-where">HQS Workshop, Karlsruhe</span><span class="talk-what">Quantum Simulation of Electron–Phonon Interactions in Circuit QED</span></li>
+          <li><span class="talk-when">2024 / 08</span><span class="talk-where">FZJ QAOA Workshop, Jülich</span><span class="talk-what">Mean-Field Approximate Optimization</span></li>
+          <li><span class="talk-when">2024 / 04</span><span class="talk-where">International Network on Quantum Annealing</span><span class="talk-what">Adiabatic Bottlenecks in Quantum Annealing — <a href="https://youtu.be/jMXp0-RdCjM?si=zHvvu4tynH2sDxwu">YouTube</a></span></li>
+          <li><span class="talk-when">2024 / 02</span><span class="talk-where">IAS-6, Jülich</span><span class="talk-what">Mean-Field Combinatorial Optimization Algorithms</span></li>
+          <li><span class="talk-when">2022 / 03</span><span class="talk-where">APS March Meeting, Chicago</span><span class="talk-what">Adaptive Numerical Solution of Kadanoff–Baym Equations</span></li>
+          <li><span class="talk-when">2020 / 06</span><span class="talk-where">Closing Workshop SFB/TR 185, Bonn</span><span class="talk-what">Non-Markovian Dynamics of a Driven-Dissipative Photon Condensate</span></li>
+          <li><span class="talk-when">2018 / 09</span><span class="talk-where">Intensive Week SFB/TR 185, Bonn</span><span class="talk-what">Introduction to Quantum Field Theory</span></li>
+          <li><span class="talk-when">2018 / 03</span><span class="talk-where">TU Kaiserslautern</span><span class="talk-what">Collapse and revival of photon oscillations</span></li>
+        </ol>
+      </details>
+    </section>
+
+    <section id="awards">
+      <header class="section-head">
+        <span class="section-num">§4</span>
+        <h2>Grants &amp; Awards</h2>
+      </header>
+
+      <ol class="awards-list">
+        <li><span class="award-when">2025 / 12</span><span class="award-body">Start-up Transfer.NRW.</span></li>
+        <li><span class="award-when">2025 / 11</span><span class="award-body">Helmholtz Enterprise Spin-Off.</span></li>
+        <li><span class="award-when">2024 / 11</span><span class="award-body">Helmholtz Enterprise Field Study Fellowship.</span></li>
+        <li><span class="award-when">2021 / 02</span><span class="award-body">PhD <em>summa cum laude</em>, University of Bonn.</span></li>
+        <li><span class="award-when">2016 / 09</span><span class="award-body">Honors-branch Scholarship, Bonn–Cologne Graduate School of Physics.</span></li>
+      </ol>
+    </section>
+
+    <aside class="supervision-note">
+      <p class="supervision-head">A note on supervision.</p>
+      <p>
+        I'm not currently taking on new Master's or Bachelor's thesis students
+        while we ramp Quicopt toward its spin-off.
+      </p>
+      <p>
+        If you have a project that is a strong fit for our line of work and
+        the timing matters to you, write to me anyway — I may be able to
+        point you to a good neighbouring group at PGI-12 or beyond.
+      </p>
+    </aside>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p><a href="https://www.fz-juelich.de/profile/bode_t">Tim Bode @ PGI-12</a></p>
-      <div class="profile-caption">
-        <a href="https://scholar.google.co.th/citations?user=8NLnrqAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-          <img src="images/Google_Scholar_logo.svg.png" alt="Google Scholar">
-        </a>
-        <a href="https://github.com/timbode" target="_blank" rel="noopener noreferrer">
-          <img src="images/github-mark.png" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/tim-bode-808b54149/" target="_blank" rel="noopener noreferrer">
-          <img src="images/In-Blue-128.png" alt="LinkedIn">
-        </a>
-      </div>
+      <header class="section-head">
+        <span class="section-num">§5</span>
+        <h2>Contact</h2>
+      </header>
+
+      <img class="contact-avatar" src="images/avatar.jpg" alt="Tim Bode">
+
+      <p class="contact-line">
+        <a href="https://www.fz-juelich.de/profile/bode_t">Tim Bode @ PGI-12, Forschungszentrum Jülich</a>
+      </p>
+      <ul class="hero-links contact-links">
+        <li><a href="https://scholar.google.co.th/citations?user=8NLnrqAAAAAJ&hl=en">Scholar</a></li>
+        <li><a href="https://github.com/timbode">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tim-bode-808b54149/">LinkedIn</a></li>
+        <li><a href="https://www.fz-juelich.de/profile/bode_t">FZJ</a></li>
+      </ul>
     </section>
+
   </main>
 
   <footer>
-    <p>© 2025 Tim Bode</p>
+    <p>© 2026 Tim Bode <span class="sep">·</span> <span class="mono">timbode.github.io</span></p>
   </footer>
 
 <script src="script.js"></script>
