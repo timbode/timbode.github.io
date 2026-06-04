@@ -18,8 +18,9 @@ second.
 ## Design system
 
 The aesthetic is **"monograph / scholar-builder"**: off-white paper, single ink-blue accent,
-Newsreader serif body, Inter for UI, JetBrains Mono for status / dates / §-numbers. The page
-should read like a chapter book, not a CV or a startup landing page. Light theme only.
+Newsreader serif body, Inter for UI, JetBrains Mono for status / dates / §-numbers, Caveat
+(handwriting) for the status block key labels. The page should read like a chapter book, not
+a CV or a startup landing page. Light theme only.
 
 Design tokens live as CSS custom properties at `:root` in `style.css`. Don't introduce new
 colors or fonts without a good reason — coherence is part of the identity.
@@ -73,9 +74,15 @@ to step.
 ### Status block (hero)
 
 A `<dl class="status-block">` with `<div class="status-row">` wrappers grouping `<dt>`/`<dd>`
-pairs. On mobile, the rows collapse — `dt` on its own line, `dd` indented below. **Do not
+pairs. Styled as a **graph-paper card**: ink-blue grid background (`background-image` with two
+`linear-gradient` layers at 24 px pitch), subtle box shadow, a faint vertical margin line
+via `::before`. Keys (`dt`) use Caveat cursive at 19 px; values (`dd`) use JetBrains Mono at
+15 px. Both share `line-height: 24px` and `align-items: baseline` so text sits on the grid
+lines. `padding-top: 8px` on the card calibrates the first baseline to land on a grid line.
+
+On mobile the rows allow wrapping (`flex-wrap: wrap`) and fonts scale down slightly. **Do not
 revert this to a `<pre>` block** with manually aligned spaces; long values overflowed every
-phone width and the mobile fix is the dl/dt/dd structure.
+phone width and the dl/dt/dd structure is the fix.
 
 ### Footer Hamiltonian
 
@@ -89,7 +96,9 @@ the left in serif italic, copyright on the right in mono. Notation comes from Ti
 
 ### Quicopt verticals (§1)
 
-Must match what's on quicopt.com. Source of truth lives in
+The lede says Quicopt targets problems that **established solvers** handle poorly (not
+"classical solvers" — Tim changed this deliberately). The verticals are no longer enumerated
+inline in the lede; they live on quicopt.com. Source of truth:
 `~/Documents/projects/websites/quicopt_website/composables/useI18n.ts`. Current verticals:
 
 - multi-supplier BOM sourcing (electronics)
@@ -102,12 +111,14 @@ either site, check the other first.
 
 ### Status block content
 
-Tim's **founding team is settled** — do not put "founding-team conversations" or similar in
-the `open to` line. Current: *"pilot projects with industry."*
+Current values:
+- **now** — *scaling Quicopt toward spin-off*
+- **research** — *quantum and quantum-inspired optimization* (no "algorithms" at the end)
+- **open to** — *pilot projects with industry*
 
-Tim has explicitly rejected boastful counts (e.g. "3 papers in pipeline (2026)" was an
-earlier draft he removed; he said it's not how scientists describe themselves). Keep status
-lines factual and modest.
+Tim's **founding team is settled** — do not put "founding-team conversations" or similar in
+the `open to` line. Tim has explicitly rejected boastful counts (e.g. "3 papers in pipeline
+(2026)"); keep status lines factual and modest.
 
 ### Research lede (§2)
 
