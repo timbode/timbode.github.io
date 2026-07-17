@@ -134,18 +134,6 @@ section {
   margin-bottom: 36px;
 }
 
-.section-num {
-  display: block;
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.32em;
-  text-indent: 0.32em;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-
 .section-head h2 {
   font-family: var(--serif);
   font-style: italic;
@@ -238,7 +226,12 @@ h3.subhead {
   line-height: 1.05;
   letter-spacing: -0.015em;
   margin-bottom: 18px;
-  color: var(--text);
+  color: var(--ink); /* fallback where background-clip is unsupported */
+  background: linear-gradient(100deg, #1a2f5c 0%, #2f5aa8 55%, #4d86d6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
 }
 
 .lede {

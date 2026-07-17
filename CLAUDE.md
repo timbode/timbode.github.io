@@ -29,14 +29,17 @@ colors or fonts without a good reason — coherence is part of the identity.
 
 ```html
 <header class="section-head">
-  <span class="section-num">§ III</span>
   <h2>Talks</h2>
 </header>
 ```
 
-Roman numerals (I–V), in mono with wide letter-spacing, above an italic Newsreader title at
-42 px. **§1 Quicopt is the exception** — its `h2` contains an `<img>` of the Quicopt logo
-(`.quicopt-headline`), not text. Do not put the logo in a side column.
+Just an italic Newsreader title at 42 px, centered. **§1 Quicopt is the exception** — its
+`h2` contains an `<img>` of the Quicopt logo (`.quicopt-headline`), not text. Do not put the
+logo in a side column.
+
+We used to prefix each head with a mono Roman numeral (`<span class="section-num">§ III</span>`,
+I–V). Tim had these removed — they read as "AI sloppy" — so there are no section numbers.
+Don't reintroduce them.
 
 ### Section dividers
 
@@ -58,6 +61,20 @@ letter.
 
 **Do not use `::first-letter`.** We tried that; the float-based wrap meant line 4 onwards
 broke block alignment, and Tim hated it. If you add a new dropcap, follow the span pattern.
+
+The dropcaps are **solid `--ink`**. We tried giving them the hero-name gradient (see below)
+via `background-clip: text` and it does not work here: the dropcap's tight `line-height: 0.85`
+clips the gradient paint-box, lopping the top off the tall glyph. Leave them solid — the hero
+name is meant to be the *single* gradient accent on the page anyway.
+
+### Hero name gradient (`.hero-name`)
+
+"Tim Bode" runs a left-to-right gradient via `background-clip: text` — deep `--ink` (#1a2f5c)
+easing to a brighter azure (#4d86d6). It's the **one** gradient on the page; keep it that way.
+Tim asked for something like daily.dev's headline gradient but subtler and in-family (blue,
+not pink). A first attempt with near-black→ink endpoints was invisible — the two colors were
+too close in value — so the endpoints need real lightness contrast to read. `-webkit-text-fill-color:
+transparent` + a `color` fallback for browsers without `background-clip: text`.
 
 ### Hero graph (`#opt-graph`)
 
