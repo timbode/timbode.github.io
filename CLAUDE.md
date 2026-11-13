@@ -85,17 +85,28 @@ not pink). A first attempt with near-black→ink endpoints was invisible — the
 too close in value — so the endpoints need real lightness contrast to read. `-webkit-text-fill-color:
 transparent` + a `color` fallback for browsers without `background-clip: text`.
 
-### Hero graph (`#opt-graph`)
+### Hero motif (`#hero-motif`)
 
-The SVG runs a damped mean-field iteration on a hand-laid 14-node random graph. **This is a
-generic visual prop, NOT representative of Tim's actual algorithms or Quicopt's IP.** The
-math is textbook stat-mech and lives in `script.js` only because it's textbook. Do not
-caption or describe it in a way that ties it to Tim's published work, MaOA, or Quicopt —
-Tim explicitly corrected an earlier draft that did so.
+Each page load picks one of two drawings at random (50/50), drawn by `initHeroMotif` in
+`script.js`:
 
-First-paint behaviour: small random init → run 10 mean-field iterations over ~2.5 s →
-freeze. Hovering the figure replays it (re-randomises if previously converged). Mobile: tap
-to step.
+- **Spin-lattice plate:** 8×8 up/down arrows in a double-ruled frame, domain wall dashed in
+  `--warm`. Hover: the wall moves right row by row and three stray spins heal.
+- **Bloch sphere:** wireframe sphere with |0⟩/|1⟩, a spiral trace from the equator to the
+  pole, state vector in `--warm`. Hover: the spiral replays.
+
+Style: thin ink lines, serif-italic maths labels, and exactly one moving part per motif, in
+`--warm`. Both are **generic textbook pictures with made-up numbers, NOT representative of
+Tim's algorithms or Quicopt's IP.** Do not caption or describe them in a way that ties them
+to Tim's published work, MaOA, or Quicopt — Tim explicitly corrected an earlier draft that
+did so for the previous motif.
+
+History: the hero used to show a mean-field iteration on a 14-node random graph. Tim
+dropped it in Nov 2026 because dotted network graphics are a cliché (a colleague's site has
+almost the same). Two rounds of mock-ups in `sandbox/hero-motifs*.html` tried factor graphs,
+energy-level spectra, spin dials, Boltzmann landscapes, bitstring bars, bifurcation trees and a
+notebook trace; he picked the lattice and the Bloch sphere. Don't reintroduce node-and-edge
+networks.
 
 ### Status block (hero)
 
@@ -194,7 +205,7 @@ All sections inside `<main>` should match the second pattern.
 
 When renaming an SVG/element id, search the CSS for the old id (mobile rules in particular
 hide in the `@media` block). We shipped a dead `#spin-grid` mobile rule once after renaming
-the hero SVG to `#opt-graph`.
+the hero SVG to `#opt-graph` (since renamed again to `#hero-motif`).
 
 ## Memory
 
