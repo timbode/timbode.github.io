@@ -44,8 +44,17 @@ Don't reintroduce them.
 ### Section dividers
 
 Short centered hairline rules: `<hr class="divider" aria-hidden="true">`. Inserted between
-hero/§1, §1/§2, §2/§3, §3/§4. **Not** between §4/§5 — the `.supervision-note` acts as the
-divider there. **Not** after §5.
+hero/Quicopt, Quicopt/Research, Research/Talks, Talks/Open Source, Open Source/Awards.
+**Not** between Awards/Contact — the `.supervision-note` acts as the divider there.
+**Not** after Contact.
+
+### Open Source section
+
+Sits between Talks and Awards: three cards (`.oss-cards`) for MFAOA.jl, QAOA.jl and
+KadanoffBaym.jl, newest first. Logos are copied from each package's `docs/src/assets/`
+into `images/` (the MFAOA SVG has its built-in "MFAOA.jl" wordmark cut out, since the card
+prints the name). Card text paraphrases each package's README; spell out acronyms on first
+use, e.g. "Mean-Field Approximate Optimization Algorithm (MFAOA)".
 
 We tried ornamental fleuron-and-diamond glyphs (Variant B prototype) and Tim found them too
 subtle to register; we explicitly walked back to hairlines. Don't reintroduce ornaments.

@@ -664,6 +664,50 @@ h3.subhead {
 .older-talks[open] summary::before { content: "−"; }
 .older-talks summary:hover { color: var(--warm); }
 
+/* ─────────────────────────────────────────────  Open Source  ── */
+
+.oss-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.oss-cards article {
+  background: var(--paper-deep);
+  border: 1px solid var(--rule-soft);
+  padding: 28px 24px 22px;
+  display: flex;
+  flex-direction: column;
+}
+.oss-logo {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.oss-logo img { max-height: 96px; max-width: 70%; }
+.pkg-name {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: center;
+}
+.pkg-name .jl { color: var(--text-muted); }
+.oss-cards p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 10px 0 16px;
+  flex: 1;
+}
+.pkg-links {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.pkg-links a { margin: 0 7px; }
+
 /* ─────────────────────────────────────────────  Supervision note  ── */
 
 .supervision-note {
@@ -835,6 +879,10 @@ footer .footer-meta {
     max-height: 64px;
     max-width: 90%;
   }
+
+  .oss-cards { grid-template-columns: 1fr; gap: 16px; }
+  .oss-logo { height: 72px; margin-bottom: 14px; }
+  .oss-logo img { max-height: 72px; }
 
   .signals li,
   .talks-list li,
